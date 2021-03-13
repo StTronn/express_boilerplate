@@ -2,8 +2,8 @@ require("dotenv").config();
 import mongoose from "mongoose";
 
 //connect to database
-const mongoConnectionURL = `mongodb+srv://rishav:${process.env.DB_PASSWORD}@cluster-0.smaef.mongodb.net/vocab_db?retryWrites=true&w=majority`;
-const databaseName = "vocab_db";
+const mongoConnectionURL = `mongodb+srv://rishav:${process.env.DB_PASSWORD}@cluster0.qy8ju.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const databaseName = "groww";
 
 const connectDB = () => {
   try {

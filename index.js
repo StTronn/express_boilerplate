@@ -39,15 +39,7 @@ app.get(
   }
 );
 
-app.get(
-  "/",
-  passport.authenticate("google", {
-    failureRedirect: "/test",
-    session: false,
-    scope: ["profile", "email"],
-  }),
-  (req, res) => res.send(req.user)
-);
+app.get("/", authenticate ,(req, res) => res.send("hello"));
 
 app.get("/test", (req, res) => res.send("Hello Test"));
 app.get("/me", authenticate, (req, res) => res.send(req.user));
